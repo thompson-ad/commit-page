@@ -1,0 +1,7 @@
+overwrite: true
+schema: https://mini-git.sgdev.org/graphql
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - typescript
+      - typescript-operations

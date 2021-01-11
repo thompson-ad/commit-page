@@ -1,0 +1,64 @@
+{
+  "name": "commit-page-exercise-solution",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "^14.0.0"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "jest",
+    "gen-graphql-types": "graphql-codegen --config codegen.yml",
+    "gen-rest-types": "openapi-typescript https://mini-git.sgdev.org/openapi.json --output src/generated/rest.ts"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "bootstrap": "^4.5.2",
+    "mdi-react": "^7.3.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
+    "@graphql-codegen/cli": "1.19.1",
+    "@graphql-codegen/typescript": "1.17.11",
+    "@graphql-codegen/typescript-operations": "^1.17.9",
+    "@sourcegraph/tsconfig": "^4.0.1",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@types/jest": "^26.0.15",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/react-test-renderer": "^16.9.3",
+    "@types/testing-library__jest-dom": "^5.9.5",
+    "babel-jest": "^26.6.3",
+    "graphql": "^15.4.0",
+    "jest": "^26.6.3",
+    "openapi-typescript": "^2.4.2",
+    "parcel-bundler": "^1.12.4",
+    "react-test-renderer": "^17.0.1",
+    "sass": "^1.26.11",
+    "typescript": "^4.0.3"
+  },
+  "browserslist": {
+    "production": [
+      "last 1 version",
+      ">1%",
+      "not dead",
+      "not <0.25%",
+      "last 1 Chrome versions",
+      "not IE > 0"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
